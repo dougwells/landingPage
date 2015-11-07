@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,9 +29,33 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!--Facebook OpenGraph Data-->
+    <meta property="og:title" content="Zero4Startup - Simple Landing Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.zero4startup.com/index.html"/>
+    <meta property="og:image" content="http://www.code4startup.com/images/media_bg.jpg"/>
+    <meta property="og:description" content="Zero4Startup is the first step in your startup journey"/>
+    <meta property="og:site_name" content="Zero4Startup.com"/>
+
+    <!--Google Analytics-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-69837902-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!--ShareThis.com Social sharing buttons on LHS of webpages-->
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+
 </head>
 
-<body id="page-top" class="index">
+<body lang="en" id="page-top" class="index">
 
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
@@ -327,4 +352,15 @@
 
 
 <script>try{(function() { for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i.toString(); } else { d.textContent=i.toString(); } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }})()}catch(e){}</script></body>
+
+
+<!--ShareThis.com social sharing buttons-->
+<script type="text/javascript">stLight.options({publisher: "fd3300a0-7117-4a92-9152-d7ac3ba8caae", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<script>
+    var options={ "publisher": "fd3300a0-7117-4a92-9152-d7ac3ba8caae", "position": "left", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "googleplus", "linkedin", "pinterest"]}};
+    var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
+</script>
+
+</body>
+
 </html>
